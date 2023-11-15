@@ -2,7 +2,9 @@ library(tidyverse)
 
 # Load data
 
-traffic_data <- readxl::read_xlsx("C:/Users/simen/Desktop/trafikkulykker.xlsx")
+path <- c("C:/Users/simen/Desktop/safetec_case/data/trafikkulykker.xlsx")
+
+traffic_data <- readxl::read_xlsx(path)
 
 # Clean names and add accident type column
 
